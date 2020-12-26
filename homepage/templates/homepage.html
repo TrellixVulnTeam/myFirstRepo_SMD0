@@ -1,0 +1,27 @@
+<h1>
+    PassWord Generator
+</h1>
+<br>
+<form action="Generator-Password">
+    <label for="password_length">Password Length </label>
+    <select name="password_length" id="password_length">
+        <option value="6">6</option>
+        <option value="8">8</option>
+        <option value="10">10</option>
+        <option value="12" selected="selected">12</option>
+        <option value="14">14</option>
+        <option value="16">16</option>
+    </select>
+    <br>
+    <label for="UpperCase">Should it include UpperCase Characters? </label>
+    <input type="checkbox" name="UpperCase" id="UpperCase">
+    <br>
+    <label for="Numbers">Should it include Numbers? </label>
+    <input type="checkbox" name="Numbers" id="Numbers">
+    <br>
+    <label for="Special">Should it include Special Characters? </label>
+    <input type="checkbox" name="Special" id="Special">
+    <br><br>
+    <input type="submit" value="Generate The PassWord">
+</form>
+<a href="{% url 'about_page' %}">About</a>
